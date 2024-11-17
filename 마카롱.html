@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>마카롱</title>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+       @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Carter+One&family=Cherry+Bomb+One&family=Gaegu:wght@300;400;700&family=Gamja+Flower&family=Gasoek+One&family=Gochi+Hand&family=Hi+Melody&family=Itim&family=Rock+Salt&family=Single+Day&display=swap');
+       body {
+        background-image: url("images/빵배경.png");
+        margin: 0;
+        padding: 0;
+        background-repeat: repeat-x,y;
+        background-position: center center;
+        height: 100vh;
+        font-family: 'Gaegu', cursive;
+        font-size: 15px;
+        overflow-x: auto;
+        overflow-y: auto;
+        text-align: center;
+        margin: 0px;
+    }
+
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        width: 80%;
+        text-align: center;
+        margin-left : 50px;
+        padding: 20px 0;
+   
+    }
+
+    section.recipe {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+    }
+
+    section.recipe article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    img.foodimage {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top : 50px;
+        border-radius: 10px;
+    }
+
+    figure {
+        flex: 1;
+        padding: 20px;
+        margin-left: 50px;   
+    }
+
+    .figcaption {
+        display: none; 
+    }
+
+    hgroup {
+        flex: 1;
+        padding: 20px;
+    }
+
+    img.로고 {
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top : 50px; 
+    }
+
+    h2 {
+        color: #59352a;
+        font-size: 3em;
+        margin-top : 10px;
+        margin-bottom: 10px;
+        margin-right : 25px;
+    }
+
+    ul, ol {
+        background-image: url("images/2페이지배경.png");
+        list-style-position: inside;
+        padding-left: 0;
+        border-radius: 10px; 
+        margin-right : 50px;
+    }
+
+    li {
+        line-height: 1.6;
+        margin-bottom: 10px;
+        font-size: 20px; 
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f78dbf;
+      color: #fafafa;
+      text-decoration: none;
+      border-radius: 5px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .btn:hover {
+    background-color: #392b1f;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="images/마카롱로고.png" alt="마카롱 글자가 있는 로고" class="로고"/>
+        </header>
+        <section class="recipe">
+            <article>
+                <figure>
+                    <img src="images/마카롱.JPG", alt="마카롱 사진" class="foodimage"/>
+                </figure>
+                <hgroup>
+                    <nav>
+                        <h2>❤︎ 준비물 ❤︎</h2>
+                        <ul>
+                            <li>아몬드 파우더 92g</li>
+                            <li>슈가 파우더 84g</li>
+                            <li>계란 흰자 70g</li>
+                            <li>흰설탕 70g</li>
+                            <li>식용색소</li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <h2>❤︎ 요리 방법 ❤︎</h2>
+                        <ol>
+                            <li> 실온에 꺼내둔 계란을 노른자와 분리하여 흰자를 머랭친다.</li>
+                            <li> 아몬드가루와 슈가파우더는 섞어서 체에 곱게 내려준다.</li>
+                            <li> 머랭에 체친 가루들을 넣고 반죽을 부드럽게 섞는다. </li>
+                            <li> 오븐판에 시트지를 깔고 동그랗게 짠 다음 예열한 오븐에 굽는다. </li>
+                            <Li> 익은 꼬끄에 크림을 올리고 다른 꼬끄를 올려 완성한다. </Li>
+                        </ol>
+                    </nav>
+                </hgroup>
+                </article>
+        </section>
+    </div>
+    <a href="Recipe.html" class="btn">Recipe</a>
+</body>
+</html>

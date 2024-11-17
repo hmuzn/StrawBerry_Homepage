@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe</title>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+       @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Carter+One&family=Cherry+Bomb+One&family=Gaegu:wght@300;400;700&family=Gamja+Flower&family=Gasoek+One&family=Gochi+Hand&family=Hi+Melody&family=Itim&family=Rock+Salt&family=Single+Day&display=swap');
+    body {
+        background-image: url("images/2페이지배경.png");
+        margin: 0;
+        padding: 0;
+        background-repeat: repeat-x,y;
+        background-position: center center;
+        height: 100vh;
+        font-family: 'Gaegu', cursive;
+        font-size: 15px;
+        overflow-x: auto;
+        overflow-y: auto;
+        text-align: center; 
+        margin: 0px;
+    }
+
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 50%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .image-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .image-row img {
+        width: 90%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f78dbf;
+      color: #fafafa;
+      text-decoration: none;
+      border-radius: 5px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .btn:hover {
+    background-color: #392b1f;
+    }
+
+
+    </style>
+</head>
+
+
+<body>
+       
+        <img src ="images/Recipelogo.png" alt="레시피 페이지의 로고" class="logo"/>
+       
+    
+        <div class="image-row">
+            <a href="팬케이크.html">
+                <img src ="images/팬케꾸.png" alt="누르면 팬케이크 레시피를 볼 수 있는 팬케이크 사진"/>
+            </a>
+    
+            <a href="마카롱.html">
+                <img src ="images/마카롱꾸.png" alt="누르면 마카롱 레시피를 볼 수 있는 마카롱 사진"/>
+            </a>
+    
+            <a href="딸기타르트.html">
+                <img src ="images/딸타꾸.png" alt="누르면 딸기타르트 레시피를 볼 수 있는 딸기타르트 사진"/>
+            </a>
+            
+            <a href="파운드.html">
+                <img src ="images/파운드꾸.png" alt="누르면 파운드케이크 레시피를 볼 수 있는 파운드 케이크 사진"/>
+            </a>
+        </div>
+
+
+        <a href="home.html" class="btn">Home</a>
+ </body>
+    
+
+</html>
