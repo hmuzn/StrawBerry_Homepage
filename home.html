@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>home</title>
+  <meta charset="UTF-8">
+  
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Cherry+Bomb+One&family=Gasoek+One&family=Gochi+Hand&family=Hi+Melody&family=Itim&family=Rock+Salt&family=Single+Day&display=swap');
+
+  body {
+    background-image: url("images/전체 배경화면.png");
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    font-family: 'Single Day', cursive;
+    font-size: 20px;
+    overflow-x: auto;
+    margin: 0px;
+    overflow-y: auto;
+  }
+
+  header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+  }  
+
+  img.제목 {
+    display: block;
+    align-items : left;
+  }
+
+  img.logo1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    z-index: 99;
+  }
+
+  nav ul {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 100px;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+nav ul li:first-child {
+  margin-left: 0px; 
+}
+
+nav ul::-webkit-scrollbar {
+  display: none;  
+}
+
+nav li {
+  list-style-image: url("images/목록설익딸기.png");
+  display: inline;
+  margin-left: 100px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 35px;
+}
+
+img.pinkStraw {
+  padding-top: 30px;
+  height: 40px;
+}
+
+nav li a:link, nav li a:visited, nav li a:active, nav li a:focus {
+  color: #FF3892;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: rgb(81, 51, 49);
+  text-decoration: blink;
+}
+
+nav li a {
+  display: inline;
+  background-image: url("images/밑줄2.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 10px;
+}
+
+/*달력 부분 css*/
+
+.content {
+  display: flex;
+  justify-content: flex-start; 
+  padding: 0 50px; 
+}
+
+.left {
+  flex: 1;
+  text-align: center; 
+}
+
+.right {
+  flex: 1;
+}
+
+.slideshow {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slideshow img {
+  display: none;
+  width: 80%;
+  margin-top: 50px;
+  margin-left : 20px; 
+}
+
+.slideshow img.active {
+  display: block;
+}
+
+.slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  font-size: 16px;
+}
+
+.slideshow .prev {
+  left: 10px;
+}
+
+.slideshow .next {
+  right: 10px;
+}
+
+.aside {
+  width : 230px;
+  float : left;
+  padding : 0px 0px 0px 20px;
+}
+
+/* Schedule 부분 */
+.todo-list {
+  display: flex;
+  align-items: center;
+  margin-top : 30px;
+}
+
+.todo-image {
+  width: 50px;
+  height: 50px;
+}
+
+.todo-text {
+  margin: 0 10px;
+}
+
+#todo-input {
+  width: 200px;
+  height: 20px;
+  padding: 5px;
+  margin-left : 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#add-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #f5b8e1; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-button:hover {
+  background-color: rgb(81, 51, 49); 
+}
+
+img.학생증 {
+  display: block;
+  margin-top: 20px;
+  width: 90%; 
+  height: 40%; 
+  border-radius: 10px;
+}
+
+
+</style>
+</head>
+
+<body>
+  <header>
+    <img src="images/제목1.png" alt="스리 데 랑쥬를 담고 있는 제목" class="제목" />
+    <img src="images/꿈파로고.png" alt="꿈빛 파티시엘 logo" class="logo1" />
+    <nav>
+      <ul>
+        <li><img src="images/목록빨딸.png" alt="목록 이미지를 위한 빨강 딸기" class="pinkStraw" /></li>
+        <li><a href="AboutMe.html"><img src="images/목록분딸.png" alt="목록 이미지를 위한 분홍 딸기" class="pinkStraw" /> ABOUT ME </a></li>
+        <li><a href="Recipe.html"><img src="images/목록분딸.png" alt="목록 이미지를 위한 분홍 딸기" class="pinkStraw" /> RECIPE </a></li>
+        <li><a href="school.html"><img src="images/목록분딸.png" alt="목록 이미지를 위한 분홍 딸기" class="pinkStraw" /> SCHOOL </a></li>
+        <li>
+          <a href="https://youtu.be/vpTfK0sdrXU" target="_blank">
+            <img src="images/목록분딸.png" alt="목록 이미지를 위한 분홍 딸기" class="pinkStraw" /> VIDEO 
+          </a>
+        </li>        
+        <li><img src="images/목록빨딸.png" alt="목록 이미지를 위한 빨강 딸기" class="pinkStraw" /></li>
+      </ul>
+    </nav>
+  </header>
+  
+<div class = "content">
+  <div class="slideshow left">
+      <img src="images/달력03.png" alt="3월 달력" class="month3" />
+      <img src="images/달력04.png" alt="4월 달력" class="month4" />
+      <img src="images/달력05.png" alt="5월 달력" class="month5" />
+      <img src="images/달력06.png" alt="6월 달력" class="month6" />
+  </div>
+
+
+    <aside class="right">
+      <div class="todo-list">
+        <img class="todo-image" src="images/컵케목록.png" alt="컵케이크 목록 꾸미기용">
+        <h2 class="todo-text">Schedule</h2>
+        <img class="todo-image" src="images/컵케목록.png" alt="컵케이크 목록 꾸미기용">
+      </div>
+      
+      
+      <ul id="Schedule">
+        <li> 3/14 그랑프리 대회 준결승전 </li>
+        <li> 3/17 프랑스어 단어 테스트 </li>
+        <li> 4/18 가온이 생일 -_-; </li>
+      </ul>
+      <input type="text" id="todo-input" placeholder="새 스케쥴 입력">
+      <button id="add-button">추가</button>
+
+      <img src="images/학생증.JPG" alt="딸기 학생증 사진" class="학생증"/>
+    </aside>
+
+    
+</div>   
+  
+<script>
+  document.getElementById('add-button').addEventListener('click', function() {
+    var list = document.getElementById('Schedule');
+    var newItem = document.getElementById('todo-input').value;
+    if (newItem) { // Check if input is not empty
+      var li = document.createElement('li');
+      li.textContent = newItem;
+      list.appendChild(li);
+      document.getElementById('todo-input').value = ''; // clear the input field
+    }
+  });
+</script>
+
+
+
+
+
+  <script>
+    const images = document.querySelectorAll('.slideshow img');
+
+    let currentImage = 0;
+
+    function showImage(index) {
+      images.forEach(image => image.classList.remove('active'));
+      images[index].classList.add('active');
+    }
+
+    function moveToPrev() {
+      currentImage = (currentImage - 1 + images.length) % images.length;
+      showImage(currentImage);
+    }
+
+    function moveToNext() {
+      currentImage = (currentImage + 1) % images.length;
+      showImage(currentImage);
+    }
+
+    setInterval(moveToNext, 3000); // 자동으로 다음 이미지로 전환 (3초마다)
+
+    showImage(currentImage);
+  </script>
+</body>
+</html>

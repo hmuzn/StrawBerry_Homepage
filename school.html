@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>school</title>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+     
+  @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Carter+One&family=Cherry+Bomb+One&family=Gaegu:wght@300;400;700&family=Gamja+Flower&family=Gasoek+One&family=Gochi+Hand&family=Gowun+Dodum&family=Hi+Melody&family=Itim&family=Rock+Salt&family=Single+Day&display=swap');
+
+  body {
+    background-image: url("images/하늘색배경.png");
+    margin: 0;
+    padding: 0;
+    background-repeat: repeat-x,y;
+    background-position: center center;
+    height: 100vh;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+    text-align: center;
+    margin: 0px;
+}
+
+.image-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.schoollogo {
+    width: 40%; 
+    height: auto; 
+    margin: 10px auto 0px;
+}
+
+.school {
+    width: 45%; 
+    height: auto; 
+    margin: 10px auto; 
+    margin-top : 0; 
+}
+
+.중간선 {
+    width: 30%; 
+    height: auto; 
+    margin: 10px auto 5px;
+}
+
+.홍보 .cook {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.홍보 .cook img {
+    width: 25%;
+    height: auto;
+    margin: 5px;
+}
+
+.홍보 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.홍보 img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.홍보 .홍보글 {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.map .오시는길{
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.map {
+    width: 70%;
+    height: 400px;
+    margin: 20px auto;
+}
+
+.form {
+    width: 80%;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+}
+
+.form fieldset {
+    width : 90%;
+    border: 1px solid #8acdff;
+    padding: 10px;
+    border-radius : 5px;
+    margin-bottom : 20px;
+}
+
+.form legend{
+    background-color :#bbd9f1;
+    border : 1px solid #a9d1f0;
+    border-radius : 5px;
+    padding : 10px 20px;
+    text-align : center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.title {
+    flex: 1;
+    text-align: right;
+    margin-right: 20px; 
+}
+
+
+.form input[type="text"],
+.form textarea {
+    float : none;
+    padding : 10px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.form textarea {
+    resize: none; 
+}
+
+.form input[type="submit"] {
+    padding: 10px 20px;
+    margin-top :15px;
+    background-color:#97c4fb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form .input-group.textarea-group {
+    flex-direction: column;
+}
+
+.form .input-group.textarea-group .title {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #a1c6f6;
+      color: #fafafa;
+      text-decoration: none;
+      border-radius: 5px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+}
+
+.btn:hover {
+    background-color: #392b1f;
+}
+
+</style>
+</head>
+<body>
+    <div class="image-wrapper">
+        <img src="images/학교로고.png" alt="세인트 마리 학교 로고" class="schoollogo"/>
+    </div>
+    <div class="image-wrapper">
+        <img src="images/중간선.png" alt="중간선 구분을 위한 꾸밈 용도의 사진" class="중간선"/>
+    </div>
+    <div class="image-wrapper">
+        <img src="images/학교사진.png" alt="학교를 담은 사진" class="school"/>
+    </div>
+    <div class="image-wrapper">
+        <img src="images/중간선.png" alt="중간선 구분을 위한 꾸밈 용도의 사진" class="중간선"/>
+    </div>
+
+ 
+    <div class="홍보"> 
+        <img src="images/홍보글.png" alt="세계 최고 명문 학교" class="홍보"/>
+        <div class="cook"> 
+            <img src="images/조리1.jpeg" alt="조리실을 사용하며 조리복을 입은 학생 사진1" class="조리"/>
+            <img src="images/조리2.jpeg" alt="조리실을 사용하며 조리복을 입은 학생 사진1" class="조리"/>
+            <img src="images/조리3.png" alt="조리실을 사용하며 조리복을 입은 학생 사진1" class="조리"/>
+        </div> 
+        <img src="images/홍보용.png" alt="1.주 3회, 6시간 이상의 제과 제빵 실습 수업 2.전 학년 기숙사 생활, 조리실 구비 3.국내, 국제 대회 실습비 전액 지원"  class="홍보글"/>
+    </div>
+    <div class="map">
+        <img src="images/오시는길.png" alt="오시는길" class="오시는길"/>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202572.09077530468!2d126.75818448671876!3d37.5034622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4146a498acd%3A0x6c60c4a04343ed50!2z66W0IOq8rOultOuPmSDruJTro6gg7ZWc6rWt7KeA7IKs!5e0!3m2!1sko!2skr!4v1686999911234!5m2!1sko!2skr" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+    </div>
+    <div class="form">
+        <fieldset>
+            <legend>궁금한 점을 물어보세요!</legend>
+            <p><label class="title" for="name">이름: </label>
+                <input type="text" name="name" id="name"><br />
+                <label class ="title" for="number">전화번호: </label>
+                <input type="text" name="number" id="number"></p>
+            <p><label for="title">
+                의견:
+            </label>
+            <textarea rows="4" cols="40" id="title"></textarea></p>
+            <input type="submit" value="제출"/>
+        </fieldset>
+    </div>
+
+    <a href="home.html" class="btn">Home</a>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AboutMe</title>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+       @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Carter+One&family=Cherry+Bomb+One&family=Gaegu:wght@300;400;700&family=Gamja+Flower&family=Gasoek+One&family=Gochi+Hand&family=Hi+Melody&family=Itim&family=Rock+Salt&family=Single+Day&display=swap');
+       
+        
+    body {
+        background-image: url("images/006.jpeg");
+        margin: 0;
+        padding: 0;
+        background-repeat: repeat-x,y;
+        background-position: center center;
+        height: 100vh;
+        font-family: 'Gaegu', cursive;
+        font-size: 15px;
+        overflow-x: auto;
+        overflow-y: auto;
+        text-align: center; 
+        margin: 0px;
+    }
+
+    /* introduce */
+    .introduce {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    }
+
+    .introduce img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+    }
+
+    .introduce .교복감딸기 {
+    width: 40%;
+    margin-top: 20px;
+    }
+
+    .introduce .한줄소개 {
+    width: 70%;
+    margin: 10px auto;
+    }
+
+    .introduce p {
+    font-size: 1.5em;
+    letter-spacing: 0.08em; 
+    line-height: 1;
+    color: #333;
+    text-align: center;
+    }
+
+    /* Prize */
+    .Prize {
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .Prize .수상경력로고 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%; 
+        height: auto;
+    }
+
+    .Prize .딸기들 {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .Prize .딸기들 .대회딸기 {
+        flex: 1 0 calc(33.33%); 
+        max-width: calc(33.33%); 
+        height: auto;
+        margin: 20px 0px;
+        box-sizing: border-box;    
+    }
+
+    .줄나눔 {
+        width : 30%;
+        height : auto;
+    }
+
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        margin : 20px auto;
+        background-image: url('images/테이블배경.png'); 
+        background-repeat: no-repeat; 
+        background-size: cover;  
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: center;
+        font-family: 'Gamja Flower', cursive;
+        font-size : 20px;
+    }
+
+    th {
+        font-weight : bold;  
+    }      
+
+/* PLAN */
+    .plan {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .plan .planlogo{
+        width : 50%;
+        height : auto;
+    }
+
+.plan .grandma , .plan .sketch , .plan .strawtaret{
+    width : 22%;
+    height : auto;
+}
+.plan .grandma{
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    float: right;
+    margin-left: 30px;
+    margin-right : 50px;
+}
+
+.plan .sketch {
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    margin-left: 90px;
+}
+
+.plan .strawtaret{
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* 텍스트 스타일 */
+.plan p {
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.plan .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.plan .clearfix {
+    display: flex;
+    align-items: center;
+}
+
+.plan .clearfix.reverse {
+    flex-direction: row-reverse;
+}
+
+/*End*/
+.end {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.end .endSt {
+    width: 70%; 
+    height: auto;
+    margin: auto; 
+}
+
+.end .dream {
+    width: 90%; 
+    height: auto;
+    margin: auto; 
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.visible {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.introduce,
+.Prize,
+.plan,
+.end {
+  transition: opacity 0.5s ease;
+}
+
+
+.btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f78dbf;
+      color: #fafafa;
+      text-decoration: none;
+      border-radius: 5px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+}
+
+.btn:hover {
+    background-color: #392b1f;
+}
+
+</style>
+
+<body>
+    <div class="introduce">
+        <img src="images/내이름은감딸기.JPG" alt="감딸기 얼굴 사진" class="교복감딸기"/>
+        <br />
+        <img src = "images/한줄소개.png" alt = "딸기의 포부" class ="한줄소개"/>
+        <br />
+        <p>내 이름은 감딸기.</p>
+        <p>파티시에를 꿈꾸는 학생이라면 모두가 원하는 세인트 마리 학교에서 제과제빵을 공부중이다. </p>
+        <p>나는 케이크를 만들때가 가장 행복하다 ~.~</p>
+        <p>언젠간 멋있는 파티시엘이 돼서 꼭 할머니의 딸기 타르트를 만들거야!</p>
+     </div>
+     <div class="Prize">
+        <img src ="images/수상경력.png" alt="수상경력로고" class ="수상경력로고"/>
+        <div class="딸기들">
+            <img src ="images/복장1.png" alt = "대회 복장을 입고 있는 딸기1" class ="대회딸기"/>
+            <img src ="images/복장2.png" alt = "대회 복장을 입고 있는 딸기2" class ="대회딸기"/>
+            <img src ="images/복장3.JPG" alt = "대회 복장을 입고 있는 딸기3" class ="대회딸기"/>
+        </div>
+        <img src ="images/줄가르기.png" alt ="줄 나누기 위해 꾸밈 용도" class="줄나눔"/>
+        <table>
+            <tr>
+                <th>연도</th>
+                <th></th>
+                <th>수상내역</th>
+            </tr>
+            <tr>
+                <th rowspan="2">2021</th>
+                <th>09.20</th>
+                <td>세인트 마리 교내 케익 그랑프리 대회 딸기팀 대상</Td>
+            </tr>
+            <tr>
+                <th>11.25</th>
+                <td>가토쇼콜라 초콜릿 공예 대회 준우승</td>
+            </tr>
+            <tr>
+                <th rowspan="3">2022</th>
+                <th>04.06</th>
+                <td>슈가 크래프트 디자인 대회 장려상</td>
+            </tr>
+            <tr>
+                <th>06.17</th>
+                <td>국제 케익 그랑프리 대회 딸기팀 대상</td>
+            </tr>
+            <tr>
+                <th>10.29</th>
+                <td>뉴욕 스텝업 가게 살리기 프로젝트 대상</td>
+            </tr>
+            <tr>
+                <th rowspan="2">2023</th>
+                <th>02.19</th>
+                <td>세계 선수권 케익 그랑프리 대회 2차 예선 통과</td>
+            </tr>
+            <tr>
+                <th>05.28</th>
+                <td>동경 제과제빵 학교 경쟁 대회 대상</td>
+            </tr>
+          </table>  
+     </div>
+
+     <div class ="plan">
+        <img src ="images/plan.png" alt="plan logo" class="planlogo">
+        <div class="clearfix">
+            <img src = "images/할머니딸기.JPG" alt="할머니가 만들어주신 딸기 타르트" class="grandma">
+            <p>어릴 적에, 내가 우울하거나 슬플 때 <br />할머니께서 항상 딸기 타르트를 구워주셨어. <br />아직도 그 향기와 포근하면서도 달콤한 맛이 기억나.</p>
+        </div>
+        <div class="clearfix reverse">
+            <img src ="images/스케치.JPG" alt ="딸기가 스케치한 케이크" class ="sketch">
+            <p>특히, 케이크를 먹을 때가 제일 행복했어. <br />지금은 그 케이크를 직접 만들 수 있어서 진짜 고마워.</p>
+        </div>
+        <div class="clearfix">
+            <img src = "images/딸타일러.png" alt="딸기타르트 일러스트" class="strawtaret">
+            <p>할머니처럼 사람들에게 행복을 줄 수 있는 파티시엘이 되는 게 내 꿈이야! <br/> 그리고 이 웹페이지를 통해 파티시엘을 꿈꾸는 친구들이 <br />도움을 많이 받으면 좋겠어.</p>
+        </div>
+    </div>
+     <div class ="end">
+        <br/>
+        <br/>
+        <br/>
+        <img src ="images/마지막딸기.JPG" alt ="이쁜 복장을 입은 딸기" class ="endSt" />
+        <img src ="images/진딸꿈.png" alt ="마지막을 장식할 딸기의 멘트" class ="dream" />  
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+     </div>
+
+     <a href="home.html" class="btn">Home</a>
+
+     <script>
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.pageYOffset;
+            var documentHeight = document.documentElement.scrollHeight;
+            var windowHeight = window.innerHeight;
+    
+            var introduce = document.querySelector('.introduce');
+            var prize = document.querySelector('.Prize');
+            var plan = document.querySelector('.plan');
+            var end = document.querySelector('.end');
+    
+            var introduceHeight = introduce.getBoundingClientRect().height;
+            var prizeHeight = prize.getBoundingClientRect().height;
+            var planHeight = plan.getBoundingClientRect().height;
+    
+            if (scrollPosition < introduceHeight) {
+                introduce.classList.add('visible');
+                introduce.classList.remove('hidden');
+                prize.classList.add('hidden');
+                prize.classList.remove('visible');
+                plan.classList.add('hidden');
+                plan.classList.remove('visible');
+                end.classList.add('hidden');
+                end.classList.remove('visible');
+            } else if (scrollPosition < introduceHeight + prizeHeight) {
+                introduce.classList.add('hidden');
+                introduce.classList.remove('visible');
+                prize.classList.add('visible');
+                prize.classList.remove('hidden');
+                plan.classList.add('hidden');
+                plan.classList.remove('visible');
+                end.classList.add('hidden');
+                end.classList.remove('visible');
+            } else if (scrollPosition < introduceHeight + prizeHeight + planHeight) {
+                introduce.classList.add('hidden');
+                introduce.classList.remove('visible');
+                prize.classList.add('hidden');
+                prize.classList.remove('visible');
+                plan.classList.add('visible');
+                plan.classList.remove('hidden');
+                end.classList.add('hidden');
+                end.classList.remove('visible');
+            } 
+    
+            if (scrollPosition + windowHeight >= documentHeight) {
+                introduce.classList.add('hidden');
+                introduce.classList.remove('visible');
+                prize.classList.add('hidden');
+                prize.classList.remove('visible');
+                plan.classList.add('hidden');
+                plan.classList.remove('visible');
+                end.classList.add('visible');
+                end.classList.remove('hidden');
+            }
+        });
+    </script>
+     
+  
+</body>
+</html>
+
+</html>
